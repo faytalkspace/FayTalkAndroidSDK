@@ -108,11 +108,11 @@ public class WKMessageContent implements Parcelable {
 
     // 搜索本类型消息的关键字
     public String getSearchableWord() {
-        return content;
+        return content!=null?content:"";
     }
 
     // 需显示的文字
     public String getDisplayContent() {
-        return displayContent;
+        return displayContent!=null?displayContent:"";
     }
 }
